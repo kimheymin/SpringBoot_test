@@ -29,5 +29,8 @@ repositories {
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.projectlombok:lombok') //롬복 추가
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
+
+
