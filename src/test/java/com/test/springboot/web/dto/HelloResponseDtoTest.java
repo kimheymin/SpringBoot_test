@@ -1,6 +1,5 @@
-package com.test.springboot.dto;
+package com.test.springboot.web.dto;
 
-import com.test.springboot.web.dto.HelloResponseDto;
 import org.junit.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -16,8 +15,7 @@ public class HelloResponseDtoTest {
         HelloResponseDto dto = new HelloResponseDto(name,amount);
 
         //then
-        assertThat(dto.getName().isEqualTo(name));
-        assertThat(dto.getAmount().isEqualTo(amount));
-
+        assertThat(dto.getName()).isEqualTo(name);
+        assertThat(dto.getAmount()).isEqualTo(amount);
     }
 }
