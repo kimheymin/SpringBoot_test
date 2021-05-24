@@ -16,9 +16,13 @@ var main = {
             type: 'POST',
             url : '/api/v1/posts',
             dateType : 'json',
-            contentType :
-
-
-        })
+            contentType : 'application/json; charset=utf-8',
+            data : JSON.stringify(data)
+        }).done(function(){
+            alert('글 등록 완료!');
+            window.application.href='/'
+        }),fail(function (error){
+           alert(JSON.stringify(error));
+        });
     }
-}
+};
