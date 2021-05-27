@@ -34,6 +34,7 @@ dependencies {
     compile('com.h2database:h2') //h2:인메모리 관계형 데이터베이스
     testCompile('org.springframework.boot:spring-boot-starter-test')
     compile('org.springframework.boot:spring-boot-starter-mustache')
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
 }
 
 
