@@ -1,4 +1,4 @@
-package com.test.springboot.config.auth.dto;
+package com.test.springboot.config.dto;
 
 import com.test.springboot.domain.user.User;
 import lombok.Getter;

@@ -1,6 +1,7 @@
 package com.test.springboot.web;
 
-import com.test.springboot.config.auth.dto.SessionUser;
+import com.test.springboot.config.LoginUser;
+import com.test.springboot.config.dto.SessionUser;
 import com.test.springboot.service.posts.PostService;
 import com.test.springboot.web.dto.PostResponseDto;
 import lombok.RequiredArgsConstructor;
@@ -26,12 +27,11 @@ public class IndexController {
     }*/
 
     private final PostService postService;
-    private final HttpSession httpSession;
 
     @GetMapping("/")
-    public String index(Model model){
+    public String index(Model model, @LoginUser SessionUser user){
         model.addAttribute("posts",postService.findAllDesc());
-        SessionUser user = (SessionUser) httpSession.getAttribute("user");
+        //SessionUser user = (SessionUser) httpSession.getAttribute("user");
         if(user!=null){
             model.addAttribute("userName",user.getName());
         }

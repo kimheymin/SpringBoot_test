@@ -1,4 +1,4 @@
-package com.test.springboot.config.auth;
+package com.test.springboot.config;
 
 import com.test.springboot.domain.user.Role;
 import lombok.RequiredArgsConstructor;
