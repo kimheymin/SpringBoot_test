@@ -1,5 +1,6 @@
 package com.test.springboot.config;
 
+import com.test.springboot.config.auth.LoginUserArgumentResolver;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
@@ -10,10 +11,10 @@ import java.util.List;
 @RequiredArgsConstructor
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
-    private final LoginUserArgmentResolver loginUserArgmentResolver;
+    private final LoginUserArgumentResolver loginUserArgumentResolver;
 
     @Override
-    public void addArgumentReslovers(List<HandlerMethodArgumentResolver> argumentResolvers){
-        argumentResolvers.add(loginUserArgmentResolver);
+    public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
+        argumentResolvers.add(loginUserArgumentResolver);
     }
 }

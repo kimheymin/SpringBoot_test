@@ -1,4 +1,4 @@
-package com.test.springboot.service.posts;
+package com.test.springboot;
 
 import com.test.springboot.domain.posts.PostRepository;
 import com.test.springboot.domain.posts.Posts;

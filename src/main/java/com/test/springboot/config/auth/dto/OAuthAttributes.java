@@ -1,4 +1,4 @@
-package com.test.springboot.config.dto;
+package com.test.springboot.config.auth.dto;
 
 import com.test.springboot.domain.user.Role;
 import com.test.springboot.domain.user.User;

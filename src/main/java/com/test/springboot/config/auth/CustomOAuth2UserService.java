@@ -1,7 +1,7 @@
-package com.test.springboot.config;
+package com.test.springboot.config.auth;
 
-import com.test.springboot.config.dto.OAuthAttributes;
-import com.test.springboot.config.dto.SessionUser;
+import com.test.springboot.config.auth.dto.OAuthAttributes;
+import com.test.springboot.config.auth.dto.SessionUser;
 import com.test.springboot.domain.user.User;
 import com.test.springboot.domain.user.UserRepository;
 import lombok.RequiredArgsConstructor;

@@ -1,4 +1,4 @@
-package com.test.springboot.config;
+package com.test.springboot.config.auth;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.ElementType;

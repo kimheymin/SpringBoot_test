@@ -1,6 +1,6 @@
 package com.test.springboot;
 
-import com.test.springboot.config.SecurityConfig;
+import com.test.springboot.config.auth.SecurityConfig;
 import com.test.springboot.web.HelloController;
 import org.junit.Test;
 import org.junit.runner.RunWith;

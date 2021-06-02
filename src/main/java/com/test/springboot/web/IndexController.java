@@ -1,16 +1,14 @@
 package com.test.springboot.web;
 
-import com.test.springboot.config.LoginUser;
-import com.test.springboot.config.dto.SessionUser;
-import com.test.springboot.service.posts.PostService;
+import com.test.springboot.config.auth.LoginUser;
+import com.test.springboot.config.auth.dto.SessionUser;
+import com.test.springboot.PostService;
 import com.test.springboot.web.dto.PostResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-
-import javax.servlet.http.HttpSession;
 
 @RequiredArgsConstructor
 @Controller
