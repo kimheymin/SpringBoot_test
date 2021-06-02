@@ -17,9 +17,9 @@ var main = {
 
     save : function(){
         var data = {
-            title : $('#title').val();
-            author : $('#author').val();
-            content : $('#content').val();
+            title : $('#title').val(),
+            author : $('#author').val(),
+            content : $('#content').val()
         };
 
         $.ajax({
@@ -30,16 +30,16 @@ var main = {
             data : JSON.stringify(data)
         }).done(function(){
             alert('글 등록 완료!');
-            window.application.href='/'
-        }),fail(function (error){
+            window.application.href='/';
+        }).fail(function (error){
            alert(JSON.stringify(error));
         });
     },
 
     update : function(){
         var data = {
-            title : $('#title').val();
-            content : $('#content').val();
+            title : $('#title').val(),
+            content : $('#content').val(),
         };
 
         var id = $('#id').val();
@@ -52,11 +52,11 @@ var main = {
                 data : JSON.stringify(data)
             }).done(function(){
                 alert('글 수정 완료!');
-                window.application.href='/'
-            }),fail(function (error){
+                window.application.href='/';
+            }).fail(function (error){
                alert(JSON.stringify(error));
             });
-        }
+        },
 
     delete : function(){
         var id = $('#id').val();

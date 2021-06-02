@@ -1,4 +1,4 @@
-package com.test.springboot;
+package com.test.springboot.web;
 
 import com.test.springboot.config.auth.SecurityConfig;
 import com.test.springboot.web.HelloController;

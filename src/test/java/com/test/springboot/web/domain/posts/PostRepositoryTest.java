@@ -1,4 +1,4 @@
-package com.test.springboot.domain.posts;
+package com.test.springboot.web.domain.posts;
 
 import org.junit.After;
 import org.junit.Test;
